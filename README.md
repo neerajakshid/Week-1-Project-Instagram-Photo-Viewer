@@ -4,7 +4,7 @@ This is an andorid application which allows users to check out popular posts (ph
 
 Time Spent: ~15 Hours
 
-<b>User Stories</b>
+<b>User Stories Completed</b>
 
   [x] User can scroll through current popular photos from Instagram <br/>
   [x] For each photo displayed, user can see the following details:<br/>
