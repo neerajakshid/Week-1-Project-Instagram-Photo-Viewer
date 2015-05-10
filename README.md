@@ -4,7 +4,7 @@ This is an andorid application which allows users to check out popular posts (ph
 
 Time Spent: ~15 Hours
 
-<b>User Stories Completed</b>
+<b>Completed User Stories </b>
 
   [x] User can scroll through current popular photos from Instagram <br/>
   [x] For each photo displayed, user can see the following details:<br/>
@@ -21,8 +21,8 @@ Time Spent: ~15 Hours
   [x] Advanced: Display each photo with the same style and proportions as the real Instagram (see screens below)<br/>
   [x] Advanced: Display each user profile image using a RoundedImageView<br/>
   [x] Advanced: Display a nice default placeholder graphic for each image during loading (read more about Picasso)<br/>
-  [x] Advanced: Improve the user interface through styling and coloring (Still more to do)<br/>
-  [x] Bonus: Allow user to view all comments for an image within a separate activity or dialog fragment<br/>
+  [x] Advanced: Improve the user interface through styling and coloring<br/>
+  [x] Bonus: Allow user to view all comments for an image within a separate activity <br/>
   [x] Bonus: Allow video posts to be played in full-screen using the VideoView<br/>
   [x] Improved the performance of the ListView using ViewHolder pattern
 
