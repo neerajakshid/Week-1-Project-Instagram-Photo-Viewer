@@ -31,7 +31,7 @@ Time Spent: ~15 Hours
 
 
 
-<b>Acknowledgemnets</b>
+<b>Acknowledgements</b>
 
 1. Android Asynchronous Http Client: An asynchronous callback-based Http client for Android built on top of Apache’s HttpClient libraries.
 2. Picasso: A powerful image downloading and caching library for Android.
