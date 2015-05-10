@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivProfilePicture"
+        android:adjustViewBounds="false"
+        android:minHeight="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:minWidth="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/activity_margin_dimensions">
+    </ImageView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvUserName"
+        android:paddingLeft="5dp"
+        android:layout_toRightOf="@+id/ivProfilePicture"
+        android:layout_alignTop="@+id/ivProfilePicture"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginStart="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="5dp"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ivClock"
+        android:layout_toLeftOf="@+id/tvTimeofPost"
+        android:src="@mipmap/clock"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTimeofPost"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginEnd="@dimen/activity_margin_dimensions"
+        android:layout_marginRight="@dimen/activity_margin_dimensions"/>
+
+    <RelativeLayout  android:id="@+id/rlChild"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:layout_below="@+id/tvUserName" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/ivPhoto"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:minHeight="50dp"
+            android:layout_marginTop="25dp"/>
+
+        <ImageButton
+            android:id="@+id/ibPlay"
+            android:layout_height="30dp"
+            android:layout_width="30dp"
+            android:src="@mipmap/play"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:onClick="callVideo"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="@dimen/activity_images_widhtheight"
+        android:layout_height="@dimen/activity_images_widhtheight"
+        android:id="@+id/ivLikes"
+        android:layout_below="@+id/tvCaption"
+        android:src="@mipmap/likes"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvLikesCount"
+        android:layout_toRightOf="@+id/ivLikes"
+        android:layout_below="@+id/tvCaption"
+        android:textColor="@color/blue"
+        android:textSize="10sp"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginRight="@dimen/activity_margin_dimensions"
+        android:layout_centerVertical="@+id/ivLikes"
+
+        />
+    <ImageView
+        android:layout_width="@dimen/activity_images_widhtheight"
+        android:layout_height="@dimen/activity_images_widhtheight"
+        android:id="@+id/ivComments"
+        android:layout_below="@+id/tvCaption"
+        android:src="@mipmap/user_comments"
+        android:layout_toRightOf="@+id/tvLikesCount"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="@dimen/activity_margin_dimensions"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCommentsCount"
+        android:layout_toRightOf="@+id/ivComments"
+        android:layout_below="@+id/tvCaption"
+        android:textColor="@color/blue"
+        android:textSize="10sp"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="@dimen/activity_margin_dimensions"
+        android:layout_centerVertical="@+id/ivComments"
+        android:maxLines="10"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCaption"
+        android:layout_below="@+id/rlChild"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="5dp"
+        android:maxLines="3"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvComments"
+        android:layout_below="@+id/ivLikes"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvViewAllComments"
+        android:layout_below="@+id/tvComments"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginBottom="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="5dp"
+        android:onClick="showComments"
+        />
+</RelativeLayout>

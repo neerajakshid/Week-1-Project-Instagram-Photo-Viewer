@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.neeraja.instagram" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/instagram_icon"
+        android:label="@string/app_name"
+        android:theme="@style/PolarThemeLogo" >
+        <activity
+            android:name=".InstagramActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PhotoCommentActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".InstagramActivity" >
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".VideoActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".InstagramActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.neeraja.instagram.InstagramActivity" />
+        </activity>
+    </application>
+
+</manifest>

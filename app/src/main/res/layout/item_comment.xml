@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCommentsProfilePicture"
+        android:adjustViewBounds="false"
+        android:minHeight="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:minWidth="40dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="@dimen/activity_margin_dimensions">
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCommentsUserName"
+        android:layout_toRightOf="@+id/ivCommentsProfilePicture"
+        android:layout_alignTop="@+id/ivCommentsProfilePicture"
+        android:textColor="@color/blue"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="@dimen/activity_margin_dimensions"
+        android:layout_marginLeft="@dimen/activity_margin_dimensions"
+        />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/ivCommentsClock"
+        android:layout_toLeftOf="@+id/tvCommentsTimeofPost"
+        android:src="@mipmap/clock"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCommentsTimeofPost"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/activity_margin_dimensions"
+        android:layout_marginEnd="@dimen/activity_margin_dimensions"
+        android:layout_marginRight="@dimen/activity_margin_dimensions"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tvMultipleComments"
+        android:layout_toRightOf="@+id/ivCommentsProfilePicture"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="@dimen/activity_margin_dimensions"
+        android:maxLines="3"
+        />
+
+
+</RelativeLayout>
